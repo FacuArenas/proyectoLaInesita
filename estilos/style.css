@@ -85,7 +85,17 @@ nav ul li a{
     margin: 0.5cm;
 }
 
+.Cotizacion{
+    border: 1px solid black;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, green , yellow);
+}
 
+.Cotizacion:hover{
+    transform: scale(1,2);
+    transition: all 2s;
+     
+}
 
 
 
