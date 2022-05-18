@@ -91,8 +91,8 @@ nav ul li a{
     background-image: linear-gradient(to right, green , yellow);
 }
 
-.Cotizacion:hover{
-    transform: scale(1,2);
+.fotosFinca:hover{
+    transform: scale(0.95);
     transition: all 2s;
      
 }
