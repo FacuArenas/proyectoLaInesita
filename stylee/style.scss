@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+   background-color:rgb(161, 223, 161)
+}
+ 
+header{
+    background-color: rgb(132, 201, 92);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    
+    
+}
+
+
+h1{
+    display: grid;
+    justify-items: center;
+}
+
+h2{
+    display: grid;
+    justify-items: left;
+}
+
+
+h3{
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-items: center;
+    margin-top: 35px;
+}
+
+.h2{
+    margin-top: 80px;
+    justify-items: center;
+}
+
+
+
+
+
+
+ul li{
+    list-style-type: none;
+}
+
+.titulo{
+    color: rgb(4, 53, 4);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#subtitulo{
+    color: rgb(81, 117, 10);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 400px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: rgb(3, 24, 3);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.5cm;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0.5cm;
+}
+
+
+
+.fotosFinca:hover{
+    transform: scale(0.95);
+    transition: all 2s;
+     
+}
+
+
+
+
+
+
+
+
+footer{
+    
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(132, 201, 92);
+    margin-bottom: 0px;
+    
+    padding: 10px;
+    border: 2px solid green;
+    
+}
+
+
+.header{
+    grid-area: header;
+}
+
+.nav{
+    grid-area: nav;
+}
+
+.galeria-grid{
+    grid-area: imagenes;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+
+.imagenes{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 700px;
+    gap: 15px;
+    align-items: end;
+    justify-items: center;
+}
+
+.wrapper{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "imagenes"
+    "footer";
+
+}
+
+@media (min-width:500px){
+    .wrapper{
+      grid-template-columns: 4fr ;
+      grid-template-areas: 
+      "header"
+      "nav"
+      "imagenes"
+      "footer"
+     
+    }
+  
+    nav ul{
+      display: flex;
+      justify-content:space-between
+    }
+
+    footer{
+        margin-top: 1500px;
+    }
+  
+  
+  }
+
+@media (min-width:700px){
+    .wrapper{
+      grid-template-columns: 4fr;
+      grid-template-areas:
+      "header"
+      "nav"
+      "imagenes"
+      "footer";
+     }
+     nav ul{
+       flex-direction: row;
+       border: 5px dotted rgb(2, 2, 2)ed;
+     }
+  
+     body{
+      background-color:rgb(235, 235, 175);
+     }
+     footer{
+       background-color: rgb(107, 153, 62);
+     }
+  
+  }
+
+@media (min-width:920px){
+
+    .imagenes{
+    
+      display: grid;
+      grid-template-columns: 1fr;
+      height: auto;
+      gap: 15px;
+      align-items: start;
+      justify-items: center;
+    
+    
+    
+    }
+    .wrapper{
+      grid-template-columns: 4fr ;
+      grid-template-areas:
+      "header"
+      "nav"
+      "galeria" 
+      "footer"
+    }
+  
+    img{
+        display: grid;
+        justify-items: center;
+        border: 5px solid white;
+        width: 500px;
+        height: 500px;
+        margin-top: 20px;
+    }
+
+    .fotosFinca{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        background-color: rgb(235, 235, 175);
+    }
+
+    footer{
+        margin-top: 200px;
+    }
+  }
+
+  .formulario{
+      margin: 50px 60px 50px 60px;
+  }
+
+  
