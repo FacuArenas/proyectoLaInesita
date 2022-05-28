@@ -1,0 +1,17 @@
+header{
+    background-color: rgb(132, 201, 92);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+    nav ul li{
+        display: inline-block;
+        list-style-type: none;}
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 0.5cm;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0.5cm;
+        }
+    }
