@@ -1,0 +1,31 @@
+$redes:(
+    facebook: #205ee4,
+    instagram: #C25E,
+    whatsapp: rgba(46, 236, 20, 0.933),
+);
+@each $red, $color in $redes{
+    .btn-#{$red}{
+    background-color: $color;
+    }
+
+};
+ 
+.titulito{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: brown;
+}
+
+.btn-facebook{
+    @extend.titulito;
+    font-size: large;
+}
+
+@mixin cajita ($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.h2{
+    @include cajita (1345px, 50px); 
+    background-color: goldenrod
+}
