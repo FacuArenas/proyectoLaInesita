@@ -1,17 +1,19 @@
 header{
-    background-color: rgb(132, 201, 92);
+    background-color: rgb(54, 104, 25);
+    height: 4em;
+    width: 84.2em;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
 
-    nav ul li{
+   nav ul li{
         display: grid;
         }
         a{
             text-decoration: none;
             color: black;
-            font-size: 0.5cm;
+            font-size: 3vh;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            margin: 0.5cm;
+            margin: 3vh;
         }
     }

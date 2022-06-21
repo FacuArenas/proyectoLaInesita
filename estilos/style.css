@@ -1,5 +1,7 @@
 header {
-  background-color: #84c95c;
+  background-color: #366819;
+  height: 4em;
+  width: 84.2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7,9 +9,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header nav ul li {
@@ -20,9 +22,9 @@ header nav ul li {
 header a {
   text-decoration: none;
   color: black;
-  font-size: 0.5cm;
+  font-size: 3vh;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin: 0.5cm;
+  margin: 3vh;
 }
 
 .btn-facebook {
@@ -47,8 +49,8 @@ header a {
 }
 
 .h2 {
-  height: 50px;
-  width: 1345px;
+  height: 1cm;
+  width: 35.7cm;
   background-color: goldenrod;
 }
 
@@ -64,7 +66,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #a1dfa1;
 }
 
@@ -108,8 +110,8 @@ h3 {
 p {
   color: darkgreen;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-left: 50px;
-  margin-top: 50px;
+  margin-left: 2cm;
+  margin-top: 2cm;
   font-size: 20px;
 }
 
@@ -159,7 +161,7 @@ footer {
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  height: 700px;
+  height: 20cm;
   gap: 15px;
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -189,7 +191,7 @@ footer {
             justify-content: space-between;
   }
   footer {
-    margin-top: 100px;
+    margin-top: 1500px;
   }
 }
 
@@ -215,6 +217,11 @@ footer {
 }
 
 @media (min-width: 920px) {
+  .wrapper {
+    -ms-grid-columns: 4fr;
+        grid-template-columns: 4fr;
+        grid-template-areas: "header" "nav" "galeria"  "footer";
+  }
   .imagenes {
     display: -ms-grid;
     display: grid;
@@ -227,18 +234,13 @@ footer {
             align-items: start;
     justify-items: center;
   }
-  .wrapper {
-    -ms-grid-columns: 4fr;
-        grid-template-columns: 4fr;
-        grid-template-areas: "header" "nav" "galeria"  "footer";
-  }
   img {
     display: -ms-grid;
     display: grid;
     justify-items: center;
     border: 5px solid white;
-    width: 500px;
-    height: 500px;
+    width: 12cm;
+    height: 12cm;
     margin-top: 20px;
   }
   .fotosFinca {
@@ -256,5 +258,110 @@ footer {
 
 .formulario {
   margin: 50px 60px 50px 60px;
+}
+
+button {
+  margin: 0.1em;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.btn-7 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#84c95c), to(#84c95c));
+  background: linear-gradient(0deg, #84c95c 0%, #84c95c 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #84c95c;
+  -webkit-box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-7:before {
+  height: 0%;
+  width: 2px;
+}
+
+.btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+
+.btn-7:hover {
+  color: #84c95c;
+  background: transparent;
+}
+
+.btn-7:hover:before {
+  height: 100%;
+}
+
+.btn-7:hover:after {
+  width: 100%;
+}
+
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #84c95c;
+  -webkit-box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-7 span:before {
+  width: 2px;
+  height: 0%;
+}
+
+.btn-7 span:after {
+  height: 2px;
+  width: 0%;
+}
+
+.btn-7 span:hover:before {
+  height: 100%;
+}
+
+.btn-7 span:hover:after {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
