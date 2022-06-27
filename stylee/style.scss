@@ -8,7 +8,7 @@
 }
 
 body{
-    display: grid;
+    display: flex;
     flex-direction: column;
     height: 100vh;
     
@@ -131,6 +131,8 @@ footer{
 
 .wrapper{
     display: grid;
+    width: 100%;
+    margin: auto;
     gap: 20px;
     grid-template-areas: 
     "header"
